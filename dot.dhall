@@ -23,7 +23,9 @@ in  { useCmd =
           let cmd-to =
                 \(dest : Text) -> \(from : Text) -> "${cmd} ${from} ${dest}"
 
-          in  { fish = cmd-to "~/.config/fish/config.fish"
+          in  { zshrc = cmd-to "~/.zshrc"
+              , zshenv = cmd-to "~/.zshenv"
+              , fish = cmd-to "~/.config/fish/config.fish"
               , starship = cmd-to "~/.config/starship.toml"
               , git = cmd-to "~/.gitconfig"
               , yabai = cmd-to "~/.yabairc"
