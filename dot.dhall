@@ -30,8 +30,10 @@ in  { useCmd =
               , git = cmd-to "~/.gitconfig"
               , yabai = cmd-to "~/.yabairc"
               , skhd = cmd-to "~/.skhdrc"
+              , to = cmd-to
               }
     , Recipe = { commands : List Text }
+    , withArgumentList
     , homebrew
     , pacman
     , paru
