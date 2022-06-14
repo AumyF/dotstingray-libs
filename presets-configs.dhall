@@ -1,5 +1,3 @@
-let base = ./dot-base.dhall
-
 let useCmd =
       \(cmd : Text) ->
         let cmd-to =
