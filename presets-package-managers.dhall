@@ -1,4 +1,4 @@
-let base = ./dot-base.dhall
+let base = ./internal.dhall
 
 let homebrew = base.withArgumentList "brew install"
 
