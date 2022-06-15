@@ -14,4 +14,4 @@ let aurMakePkg =
       \(pkg : Text) ->
         "git clone https://aur.archlinux.org/${pkg}.git /tmp/dotstingray/${pkg} && cd /tmp/dotstingray/${pkg} && makepkg -si"
 
-in  { homebrew, pacman, paru, aurMakePkg }
+in  { homebrew, pacman, paru, aurMakePkg, nix-env-iA, nix-profile }
